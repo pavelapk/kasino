@@ -1,0 +1,40 @@
+
+
+h1 {
+    color: #17f
+}
+
+button {
+    font-size: 40pt;
+}
+button:hover {
+    background: rgb(207, 216, 83);
+}
+button:active {
+    background: rgb(216, 83, 83);
+}
+
+img {
+    width: 100%;
+}
+
+.wheel {
+    position: relative; 
+    width: 80%;
+    max-width: 500px;
+}
+
+.line {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #00ffa1;
+    position: absolute;
+    top: 21%;
+    left: calc(50% - 7.5px);
+}
+
+#info {
+    font-size: 2em;
+    font-family: sans-serif;
+}
