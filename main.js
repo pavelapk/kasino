@@ -32,7 +32,7 @@ async function getWeather() {
     })).json();
     console.log(address);
     let city = address[0].split(',')[4].trim();
-    let r = await fetch(`http://wttr.in/${city}?format=j1`)
+    let r = await fetch(`https://wttr.in/${city}?format=j1`)
     let data = await r.json();
     console.log(data);
     let cur = data.current_condition[0];
