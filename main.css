@@ -39,3 +39,12 @@ img {
     font-size: 2em;
     font-family: sans-serif;
 }
+
+
+.container {
+    display: flex;
+}
+
+.container > * {
+    margin: 10px;
+}
