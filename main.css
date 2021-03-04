@@ -48,3 +48,9 @@ img {
 .container > * {
     margin: 10px;
 }
+
+#Armen {
+    height: 500px; 
+    max-width: 600px; 
+    min-width: 15px;
+}
