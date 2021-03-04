@@ -4,7 +4,6 @@ let vel = 0;
 let acc = 0;
 
 
-
 async function spin() {
     let rand = await getWeather();
     acc = rand * 0.2 + 0.1;
@@ -21,7 +20,6 @@ async function spin() {
 }
 
 
-
 async function getWeather() {
     let address = await (await fetch("https://randommer.io/random-address", {
         method: 'POST',
@@ -32,6 +30,7 @@ async function getWeather() {
     })).json();
     console.log(address);
     let city = address[0].split(',')[4].trim();
+    if (city == "Томск") alert("вы выиграли");
     let r = await fetch(`https://wttr.in/${city}?format=j1`)
     let data = await r.json();
     console.log(data);
